@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoBu Martial Arts</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>DoBu Martial Arts</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#artes-marciales">Artes Marciales</a></li>
+            <li><a href="#precios">Precios</a></li>
+            <li><a href="#horarios">Horarios</a></li>
+            <li><a href="#instructores">Instructores</a></li>
+            <li><a href="#videos">Videos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Sección de inicio con carrusel -->
+        <section id="inicio">
+            <div class="carousel">
+                <div class="carousel-container">
+                    <!-- Ajuste de rutas para asegurar acceso correcto -->
+                    <img src="img/karate.webp" alt="Karate" class="carousel-slide">
+                    <img src="img/judo.jpg" alt="Judo" class="carousel-slide">
+                    <img src="img/muaythai.jpg" alt="Muay Thai" class="carousel-slide">
+                </div>
+                <div class="carousel-buttons">
+                    <button class="carousel-button" id="prevBtn">Anterior</button>
+                    <span id="slideCounter">1/3</span>
+                    <button class="carousel-button" id="nextBtn">Siguiente</button>
+                    <button class="carousel-button" id="autoBtn">Auto</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Artes Marciales -->
+        <section id="artes-marciales">
+            <h2>Nuestras Artes Marciales</h2>
+            <div class="martial-arts-grid">
+                <div class="martial-art">
+                    <h3>Jiu-jitsu</h3>
+                    <p>Arte marcial japonés centrado en técnicas de defensa personal y sumisión. Perfecto para principiantes y avanzados.</p>
+                </div>
+                <div class="martial-art">
+                    <h3>Karate</h3>
+                    <p>Arte marcial tradicional que enfatiza los golpes de puño y patada. Desarrolla disciplina y control.</p>
+                </div>
+                <div class="martial-art">
+                    <h3>Judo</h3>
+                    <p>Arte marcial y deporte olímpico basado en proyecciones y técnicas de suelo. Ideal para todas las edades.</p>
+                </div>
+                <div class="martial-art">
+                    <h3>Muay Thai</h3>
+                    <p>Arte marcial tailandés conocido por su uso efectivo de golpes, rodillas y codos. Excelente para el acondicionamiento físico.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Precios -->
+        <section id="precios">
+            <h2>Precios y Membresías</h2>
+            <div class="pricing-grid">
+                <div class="price-card">
+                    <h3>Básico</h3>
+                    <p class="price">25.00€/mes</p>
+                    <ul>
+                        <li>1 arte marcial</li>
+                        <li>2 sesiones por semana</li>
+                    </ul>
+                </div>
+                <div class="price-card">
+                    <h3>Intermedio</h3>
+                    <p class="price">35.00€/mes</p>
+                    <ul>
+                        <li>1 arte marcial</li>
+                        <li>3 sesiones por semana</li>
+                    </ul>
+                </div>
+                <div class="price-card">
+                    <h3>Avanzado</h3>
+                    <p class="price">45.00€/mes</p>
+                    <ul>
+                        <li>2 artes marciales</li>
+                        <li>5 sesiones por semana</li>
+                    </ul>
+                </div>
+                <div class="price-card">
+                    <h3>Elite</h3>
+                    <p class="price">60.00€/mes</p>
+                    <ul>
+                        <li>Clases ilimitadas</li>
+                        <li>Acceso a todas las disciplinas</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="additional-services">
+                <h3>Servicios Adicionales</h3>
+                <ul>
+                    <li>Clases particulares de artes marciales: 15.00€/hora</li>
+                    <li>Curso de defensa personal (6 semanas): 180.00€</li>
+                    <li>Uso de sala fitness: 6.00€/visita</li>
+                    <li>Entrenamiento personal: 35.00€/hora</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Sección de Horarios -->
+        <section id="horarios">
+            <h2>Horarios de Clases</h2>
+            <div class="schedule-container">
+                <table class="schedule-table">
+                    <thead>
+                        <tr>
+                            <th>Hora</th>
+                            <th>Lunes</th>
+                            <th>Martes</th>
+                            <th>Miércoles</th>
+                            <th>Jueves</th>
+                            <th>Viernes</th>
+                            <th>Sábado</th>
+                            <th>Domingo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Los horarios se cargarán dinámicamente desde schedule.js -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Sección de Instructores -->
+        <section id="instructores">
+            <h2>Nuestros Instructores</h2>
+            <table id="instructores-tabla">
+                <!-- La información se cargará dinámicamente desde instructors.js -->
+            </table>
+        </section>
+
+        <!-- Sección de Videos -->
+        <section id="videos">
+            <h2>Videos de Entrenamiento</h2>
+            <div id="video-container">
+                <!-- Los videos se cargarán dinámicamente desde videos.js -->
+            </div>
+        </section>
+
+        <!-- Sección de Contacto -->
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre">
+                </div>
+
+                <div class="form-group">
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" id="apellidos" name="apellidos">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+
+                <div class="form-group">
+                    <label for="user">Usuario:</label>
+                    <input type="text" id="user" name="user">
+                </div>
+
+                <div class="form-group">
+                    <label for="pass">Contraseña:</label>
+                    <input type="password" id="pass" name="pass">
+                </div>
+
+                <div class="form-group">
+                    <label for="pass-confirm">Confirmar Contraseña:</label>
+                    <input type="password" id="pass-confirm" name="pass-confirm">
+                </div>
+
+                <div class="form-group">
+                    <label for="pais">País:</label>
+                    <select id="pais" name="pais">
+                        <option value="">Seleccione un país</option>
+                        <option value="ES">España</option>
+                        <option value="FR">Francia</option>
+                        <option value="PT">Portugal</option>
+                        <option value="DE">Alemania</option>
+                        <option value="IT">Italia</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>¿Es fumador?</label>
+                    <div class="radio-group">
+                        <input type="radio" id="fumador-si" name="fumador" value="si">
+                        <label for="fumador-si">Sí</label>
+                        <input type="radio" id="fumador-no" name="fumador" value="no">
+                        <label for="fumador-no">No</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="comentarios">Comentarios:</label>
+                    <textarea id="comentarios" name="comentarios"></textarea>
+                </div>
+
+                <div class="form-buttons">
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Limpiar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 DoBu Martial Arts. DWEC_H1_2T_oscarduran</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/carousel.js"></script>
+    <script src="js/schedule.js"></script>
+    <script src="js/instructors.js"></script>
+    <script src="js/videos.js"></script>
+    <script src="js/form-validation.js"></script>
+</body>
+</html>

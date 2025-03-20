@@ -1,0 +1,24 @@
+{
+    "videos": [
+      {
+        "titulo": "Técnicas básicas de Jiu-jitsu",
+        "url": "https://youtu.be/gJk7701hGDc?si=VuIzR1BsOd3Ydz4j"
+      },
+      {
+        "titulo": "Introducción al Karate",
+        "url": "https://youtu.be/OucuYqLj9Vo?si=3kdsa3s5kiFqflL_"
+      },
+      {
+        "titulo": "Fundamentos del Judo",
+        "url": "https://youtu.be/iJxkVKfz8gA?si=BKasJbjtE3ojO3-c"
+      },
+      {
+        "titulo": "Técnicas de Muay Thai",
+        "url": "https://youtu.be/ByO4aDY0W5w?si=-Vu6LdW1YTt7lV86"
+      },
+      {
+        "titulo": "Defensa Personal Básica",
+        "url": "https://youtu.be/rvYf-wSS-2Y?si=u5ZAoCVYRthgXLvS"
+      }
+    ]
+  }
